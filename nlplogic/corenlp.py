@@ -7,7 +7,7 @@ def search_wikipedia(name):
     return wikipedia.search(name)
 
 
-def summary_wikepedia(name):
+def summary_wikipedia(name):
     """summary"""
     print(f"summary for name:{name}")
     return wikipedia.summary(name)
@@ -20,7 +20,7 @@ def get_text_blob(text):
 
 def get_phrases(name):
     """wikipedia"""
-    text = summary_wikepedia(name)
+    text = summary_wikipedia(name)
     blob = get_text_blob(text)
     phrases = blob.noun_phrases
     return phrases

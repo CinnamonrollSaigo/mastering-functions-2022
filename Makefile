@@ -3,10 +3,10 @@ install:
 		pip install -r requirements.txt
 
 test:
-	python -m pytest -vv --cov=wikiphrases --cov=nlplogic test_corenlp.py
+	python -m pytest -vv --cov=test_corenlp.py
 		
-	python -m pytest --nbval notebook.ipynb	#tests our jupyter notebook
-	#python -m pytest -v tests/test_web.py #if you just want to test web
+	# python -m pytest --nbval notebook.ipynb	#tests our jupyter notebook
+	# python -m pytest -v tests/test_web.py #if you just want to test web
 
 debug:
 	python -m pytest -vv --pdb	#Debugger is invoked
