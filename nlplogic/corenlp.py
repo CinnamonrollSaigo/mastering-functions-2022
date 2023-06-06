@@ -20,7 +20,7 @@ def get_text_blob(text):
 
 def get_phrases(name):
     """wikipedia"""
-    text = summary_wikipedia(name)
-    blob = get_text_blob(text)
-    phrases = blob.noun_phrases
-    return phrases
+    # text = summary_wikipedia(name)
+    # blob = get_text_blob(text)
+    # phrases = blob.noun_phrases
+    return name
